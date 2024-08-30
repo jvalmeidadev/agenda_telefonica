@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://cdn-icons-png.flaticon.com/128/3032/3032976.png" alt="agenda contatos" />
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="name" required placeholder="Nome do Contato" />
+            <input type="number" id="numero" required placeholder="Numero do Telefone" />
+            <button type="submit">Incluir</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do Contato
+                    </th>
+                    <th>Numero do Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de Contatos</td>
+                    <td id="valor-contatos">---</td>
+                </tr>
+            </tfoot>
+        </table>
+        <footer>
+            <p>&copy Todos os direitos Reservados 2024</p>
+        </footer>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
